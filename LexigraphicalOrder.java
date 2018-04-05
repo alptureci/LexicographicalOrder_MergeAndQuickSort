@@ -80,8 +80,6 @@ public class LexigraphicalOrder {
 			String st = n.key + " " + n.value;
 			result.add(st);
 		}
-		
-		
 		return result;
 		
 	}
