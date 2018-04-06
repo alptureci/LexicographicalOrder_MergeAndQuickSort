@@ -55,6 +55,17 @@ public class LexicographicalOrder_QuickSort {
 			logs[i] = new Node(t[0],t[1]);
 		}
 		
+		
+		// Alternative 1: using Arrays.sort much more efficient in terms of coding. Less Code
+		Arrays.sort(logs, new Comparator<Node>(){
+			public int compare(Node n1, Node n2){
+				return n1.compareTo(n2);
+			}
+		});
+		
+		// Alternative 2: using custom Quick Sort Method.
+		// Relevant methods:
+		// 	sort, sort, partition
 		result = sort(logs);		
 		return result;
 		
